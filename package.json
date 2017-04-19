@@ -7,7 +7,7 @@
     "author": "Anil Erduran <anil.erduran@hds.com>",
     "license": "No production!",
     "dependencies": {
-        "express": "3.2.4",
+        "express": "4.15.2",
         "jade": "1.11.0",
         "mocha": "1.20.1",
         "supertest": "1.1.0"

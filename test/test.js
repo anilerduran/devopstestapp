@@ -1,13 +1,24 @@
-// Simple async test for HTTP 200 response code using supertest
-'use strict';
+var supertest = require("supertest");
+var should = require("should");
 
-var request = require("supertest"),
-    app = require("../app").getApp;
+var server = supertest.agent("http://localhost:8080");
 
-describe('GET /', function(){
-  it('expects HTTP response 200', function(done){
-    request(app)
-     .get('/')
-	 .expect(200, done); 
+// UNIT test begin
+
+describe("SAMPLE unit test",function(){
+
+  // #1 should return home page
+  it("should return home page",function(done){
+    // calling home page
+    server
+    .get("/")
+    .expect("Content-type",/text/)
+    .expect(200) // THis is HTTP response
+    .end(function(err,res){
+      // HTTP status should be 200
+      res.status.should.equal(200);
+      done();
+    });
   });
+
 });
