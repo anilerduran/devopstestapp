@@ -1,0 +1,27 @@
+{
+    "container": {
+        "docker": {
+            "image": "chess79/devopstest:latest",
+            "network": "BRIDGE",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "protocol": "tcp"
+                }
+            ]
+        },
+        "type": "DOCKER"
+    },
+    "cpus": 0.5,
+    "id": "node.js devops test",
+    "instances": 1,
+    "labels": {
+        "HAPROXY_0_VHOST": "ELB_HOSTNAME",
+        "HAPROXY_GROUP": "external",
+        "lastChangedBy": "anilnchris"
+    },
+    "mem": 256,
+    "upgradeStrategy": {
+        "minimumHealthCapacity": 0
+    }
+}
