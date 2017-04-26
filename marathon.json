@@ -6,7 +6,7 @@
             "image": "chess79/devopstest",
             "network": "BRIDGE",
             "portMappings": [
-                { "hostport": 808, containerPort": 8080, "protocol": "tcp" }
+                { "hostport": 80, "containerPort": 8080, "protocol": "tcp" }
             ]
         },
     },
