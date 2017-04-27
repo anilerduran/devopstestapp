@@ -3,7 +3,7 @@
     "container": {
         "type": "DOCKER",
         "docker": {
-            "image": "hub.docker.com/chess79/devopstest:latest",
+            "image": "chess79/devopstest:latest",
             "network": "BRIDGE",
             "portMappings": [{ "hostPort": 80, "containerPort": 8080, "protocol": "tcp" }],
             "forcePullImage": true
