@@ -1,6 +1,7 @@
 {
     "id": "devopstest",
     "container": {
+        "force_pull_image": "true",
         "type": "DOCKER",
         "docker": {
             "image": "chess79/devopstest:latest",
