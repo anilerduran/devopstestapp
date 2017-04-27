@@ -1,14 +1,12 @@
 {
-    "id": "node.js devops test",
+    "id": "devopstest",
     "container": {
         "type": "DOCKER",
         "docker": {
-            "image": "chess79/devopstest",
+            "image": "chess79/devopstest:latest",
             "network": "BRIDGE",
-            "portMappings": [
-                { "hostport": 80, "containerPort": 8080, "protocol": "tcp" }
-            ]
-        },
+            "portMappings": [{ "hostport": 80, "containerPort": 8080, "protocol": "tcp" }]
+        }
     },
     "cpus": 0.1,
     "instances": 1,
