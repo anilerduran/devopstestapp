@@ -12,5 +12,8 @@
     "cpus": 0.1,
     "instances": 1,
     "mem": 128,
-    "acceptedResourceRoles": ["slave_public"]
+    "acceptedResourceRoles": ["slave_public"],
+    "upgradeStrategy": {
+        "minimumHealthCapacity": 0
+    }
 }
